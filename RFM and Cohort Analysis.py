@@ -24,14 +24,14 @@ import matplotlib.pyplot as plt
 # In[5]:
 
 
-OUTPUT_RFM = "C:/Users/Asha Anandan/Documents/Study Materials/Portfolio Projects/Project 1 E-commerce Customer Intelligence/Outputs/Output_RFM/"
-OUTPUT_COHORT = "C:/Users/Asha Anandan/Documents/Study Materials/Portfolio Projects/Project 1 E-commerce Customer Intelligence/Outputs/Output_Cohort/"
+OUTPUT_RFM = "C:/Users/E-commerce Customer Intelligence/Outputs/Output_RFM/"
+OUTPUT_COHORT = "C:/Users/E-commerce Customer Intelligence/Outputs/Output_Cohort/"
 
 
 # In[6]:
 
 
-f = pd.read_csv("C:/Users/Asha Anandan/Documents/Study Materials/Portfolio Projects/Project 1 E-commerce Customer Intelligence/Outputs/Output_data/fact_transactions_clean.csv.gz",
+f = pd.read_csv("C:/Users/E-commerce Customer Intelligence/Outputs/Output_data/fact_transactions_clean.csv.gz",
                 dtype={"InvoiceNo": str, "StockCode": str},
                 parse_dates=["InvoiceDate"])
 
@@ -213,7 +213,7 @@ counts.to_csv(f"{OUTPUT_COHORT}/cohort_retention_counts.csv")
 
 
 #Order Basket
-OUTPUT_BASKET = "C:/Users/Asha Anandan/Documents/Study Materials/Portfolio Projects/Project 1 E-commerce Customer Intelligence/Outputs/Output_Basket/"
+OUTPUT_BASKET = "C:/Users/E-commerce Customer Intelligence/Outputs/Output_Basket/"
 import os
 os.makedirs(OUTPUT_BASKET, exist_ok=True)
 
